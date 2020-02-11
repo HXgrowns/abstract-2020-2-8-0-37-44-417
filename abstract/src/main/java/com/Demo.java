@@ -10,8 +10,8 @@ public class Demo {
     chickens.add(new Cock());
     chickens.add(new Hen());
     chickens.add(new ChildChicken());
-    for (int i = 0; i < chickens.size(); i++) {
-      System.out.format("100元可以买%s %d只\n", chickens.get(i).getType(), (int)(100 / chickens.get(i).getPrice()));
+    for (Chicken chicken : chickens) {
+      chicken.buy(100);
     }
   }
 
