@@ -7,9 +7,5 @@ public class Cock extends Chicken {
         return 5;
     }
 
-    @Override
-    public String getType() {
-        return getClass().getSimpleName();
-    }
 
 }
